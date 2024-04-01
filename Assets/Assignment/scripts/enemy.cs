@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float enemySpeed;
+
 
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Translate(0, -1 * enemySpeed * Time.deltaTime, 0);
     }
 }
