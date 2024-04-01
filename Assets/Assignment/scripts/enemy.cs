@@ -5,12 +5,19 @@ using UnityEngine;
 
 public class enemy : MonoBehaviour
 {
-    public float enemySpeed;
-
-
+    
+     public float speed;
+    
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(0, -1 * enemySpeed * Time.deltaTime, 0);
+        transform.Translate(0, -1 * speed * Time.deltaTime, 0);
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(gameObject);
+        Debug.Log("GAME OVER");
     }
 }
