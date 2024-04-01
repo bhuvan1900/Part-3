@@ -20,4 +20,10 @@ public class enemy : MonoBehaviour
         Destroy(gameObject);
         Debug.Log("GAME OVER");
     }
+
+    protected virtual void Destruction()
+    {
+        //something something
+    }
+
 }
