@@ -39,4 +39,10 @@ public class moon : enemy
             yield return new WaitForSeconds(interval);
         }
     }
+
+    protected override void gameOver()
+    {
+        Debug.Log("GAME OVER by child");
+
+    }
 }

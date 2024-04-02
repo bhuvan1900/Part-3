@@ -8,8 +8,10 @@ public class player : MonoBehaviour
     
     private void Update()
     {
+ 
         float direction = Input.GetAxis("Horizontal");
         transform.Translate (direction * playerSpeed * Time.deltaTime,0, 0);
+
 
     }
 }
