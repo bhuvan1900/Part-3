@@ -40,9 +40,4 @@ public class moon : enemy
         }
     }
 
-    protected override void gameOver()
-    {
-        Debug.Log("GAME OVER by child");
-
-    }
 }

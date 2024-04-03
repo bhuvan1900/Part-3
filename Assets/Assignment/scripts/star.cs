@@ -6,15 +6,11 @@ public class star : enemy
 {
     public Transform target;
 
-    private void Update()
+    protected override void Update()
     {
-                   Vector3 direction = (target.position - transform.position).normalized;
-            transform.Translate(direction * speed * Time.deltaTime);
-    }
+        base.Update();
 
-    protected override void gameOver()
-    {
-        Debug.Log("GAME OVER by star");
+        Vector3 direction = (target.position - transform.position).normalized;
+        transform.Translate(direction * speed * Time.deltaTime);
     }
-
 }

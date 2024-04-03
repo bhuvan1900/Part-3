@@ -7,7 +7,7 @@ public class player : MonoBehaviour
 {
     public float playerSpeed;
     private float target;
-    public bool control=true;
+    public bool control= true;
     
 
     private void Update()
