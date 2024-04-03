@@ -9,7 +9,7 @@ public class enemy : MonoBehaviour
      public float speed;
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         transform.Translate(0, -1 * speed * Time.deltaTime, 0);
     }
