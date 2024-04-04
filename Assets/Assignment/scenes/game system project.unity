@@ -772,9 +772,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
-  delay: 1.4
-  sizeIncrease: 0.87
-  interval: 0.6
+  delay: 1.98
+  sizeIncrease: 0.54
+  interval: 0.45
 --- !u!1 &1321508721
 GameObject:
   m_ObjectHideFlags: 0

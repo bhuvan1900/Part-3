@@ -12,7 +12,11 @@ public class enemy : MonoBehaviour
     private static int totalScore = 0;
     //float for debug log
     private static int currentScore = 0;
-    
+
+    protected virtual void Start()
+    {
+        
+    }
 
     protected virtual void Update()
     {
@@ -30,7 +34,7 @@ public class enemy : MonoBehaviour
     }
 
     //add score
-    public static void addScore(int score=0)
+    public static void addScore(int score)
     {
         totalScore += score;
 

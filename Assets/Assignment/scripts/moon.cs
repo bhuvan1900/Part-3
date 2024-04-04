@@ -14,14 +14,21 @@ public class moon : enemy
 
     private SpriteRenderer spriteRenderer;
 
-    private void Awake()
+
+    //private void Awake()
+    //{
+    //    spriteRenderer = GetComponent<SpriteRenderer>();
+    //    //the coroutine 
+    //    StartCoroutine(increaserCoroutine());
+    //}
+    protected override void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        //the coroutine 
         StartCoroutine(increaserCoroutine());
     }
 
-   IEnumerator increaserCoroutine()
+
+    IEnumerator increaserCoroutine()
     {
         //initial delay
         yield return new WaitForSeconds(delay);
